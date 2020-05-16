@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    height: 100vh;
+    margin: 0px;
+}
+
+.bold-weight {
+    font-weight: 800;
+}
+
+.medium-weight {
+    font-weight: 400;
+}
+
+.arrow {
+    border: solid #A7A7A7;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0px 0px 3px 6px;
+}
+
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
