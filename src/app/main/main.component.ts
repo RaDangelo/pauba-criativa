@@ -11,8 +11,14 @@ export class MainComponent implements OnInit {
   configuration = config as Configuration;
   hashtags = config.hashtags;
   projects = config.projects;
+  projectOne;
+  projectTwo;
+  projectThree;
 
   constructor() { 
+    this.projectOne = this.projects[0];
+    this.projectTwo = this.projects[1];
+    this.projectThree = this.projects[2];
   }
 
   ngOnInit(): void {
@@ -21,6 +27,9 @@ export class MainComponent implements OnInit {
   openBehance(url?: string) {
     console.log('opening behance...');
     window.open(url ? url : this.configuration.behanceUrl);
+  }
+
+  moveRight() {
   }
 
 }
