@@ -1,0 +1,105 @@
+#header {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: inline-flex;
+    background-color: #000000;
+}
+
+#header > div {
+    position: relative;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 1.28px;
+    color: #F1F1F1;
+    opacity: 1;
+    float: left;
+}
+
+#header > #title {
+    left: 4.5%;
+}
+
+#header > #buy {
+    font-size: 14px;
+    letter-spacing: 1.12px;
+    left: 22%;
+}
+
+#header > #buy:hover {
+    color: #8846ff;
+    cursor: pointer;
+}
+
+#header > #contact:hover {
+    color: #F1F1F1;
+    cursor: default;
+}
+
+#header > #contact {
+    font-size: 14px;
+    letter-spacing: 1.12px;
+    color: #A7A7A7;
+    left: 26%;
+}
+
+#header > #contactDetails {
+    text-align: right;
+    padding-top: 10px;
+    width: 27%;
+    border-top: 2px #A7A7A7 inset;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+}
+
+#header > #contactDetails > li {
+    display: block;
+    margin-bottom: 6px;
+}
+
+#header > #contactDetails > li > #whatsappIcon {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    position: relative;
+    float: left;
+    left: 57%;
+    background: url('src/assets/whatsapp.svg');
+}
+
+#header > #instagramIcon {
+    width: 24px;
+    height: 24px;
+    float: left;
+    left: 42%;
+    cursor: pointer;
+    background: url('src/assets/insta.svg');
+}
+
+#header > #behanceIcon {
+    width: 38px;
+    height: 24px;
+    float: left;
+    left: 43%;
+    cursor: pointer;
+    background: url('src/assets/behance.svg');
+}
+
+#header > #contactDetails > li > #phoneNumber {
+    position: relative;
+    float: right;
+    padding-top: 2px;
+}
+
+#header > #contactDetails > #email {
+    cursor: pointer;
+}
+
+#header > #logo {
+    width: 45px;
+    height: 45px;
+    left: 3%;
+    position: relative;
+    background: url('src/assets/logo-3.svg');
+}

@@ -1,0 +1,27 @@
+#footer {
+    width: 100%;
+    height: 90%;
+    background-color: #0d0d0d;
+    align-items: center;
+    display: inline-flex;
+}
+
+#footer > label {
+    width: 186px;
+    height: 16px;
+    position:relative;
+    left: 3%;
+    /* UI Properties */
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.04px;
+    color: #A7A7A7;
+    opacity: 1;
+}
+
+#monetize {
+    width: 100%;
+    height: 10%;
+    background-color:#1ddb70;
+}

@@ -1,0 +1,37 @@
+<div id="main">
+    <div class="container w-full h-small" style="align-items: start;">
+        <div id="description">{{configuration.siteDescription}}
+            <div *ngFor="let h of hashtags" class="hashtag">#{{h}} </div>
+        </div>
+    </div>
+    <div class="container w-small h-medium">
+        <div id="mainPhrase">{{configuration.mainPhrase}}</div>
+        <div id="mainDescription">{{configuration.mainDescription}}</div>
+        <div class="container w-h-small">
+            <div id="behanceDescription">veja mais em nosso</div>
+            <div id="behanceButton" class="blue-btn" (click)="openBehance()">
+                <div class="button-container">
+                    <div id="behanceIcon2"></div>
+                    <span>PORTFÓLIO</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container w-medium h-medium" style="left:6.5%">
+        <div class="project-container">
+            <div class="project-full-image" (click)="openBehance(projects[0].url)"
+                [style.backgroundImage]="'url(' + projects[0].image + ')'">
+            </div>
+        </div>
+        <div class="project-container" style="opacity: 0.5;">
+            <div class="project-full-image" (click)="openBehance(projects[1].url)"
+                [style.backgroundImage]="'url(' + projects[1].image + ')'">
+            </div>
+        </div>
+        <div class="project-container" style="margin-right: 0px;">
+            <div class="project-half-image" (click)="openBehance(projects[2].url)"
+                [style.backgroundImage]="'url(' + projects[2].image + ')'">
+            </div>
+        </div>
+    </div>
+</div>

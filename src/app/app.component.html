@@ -1,22 +1,3 @@
-<div id="header">
-  <div id="logo"></div>
-  <div id="title"><label class="bold-weight">{{configuration.name}} </label> <label
-      class="medium-weight">{{configuration.surname}}</label></div>
-  <div id="buy" (click)="buy()" class="bold-weight">{{links[0]}}</div>
-  <div id="contact" class="medium-weight" (mouseenter)="showContact()">{{links[1]}}<i class="arrow down"></i></div>
-  <div *ngIf="isContact" id="contactDetails" (mouseenter)="showContact()" (mouseleave)="hideContact()">
-    <li id="email" (click)="sendMail()">{{configuration.email}}</li>
-    <li>
-      <div id="whatsappIcon"></div>
-      <div id="phoneNumber">{{configuration.phoneNumber}}</div>
-    </li>
-  </div>
-  <div id="instagramIcon" (click)="openInstagram()"></div>
-  <div id="behanceIcon" (click)="openBehance()"></div>
-</div>
-<div id="body"></div>
-<div id="footer">
-  <label>{{footer}}</label>
-</div>
-<div id="monetize">
-</div>
+<menu></menu>
+<main></main>
+<footer></footer>
