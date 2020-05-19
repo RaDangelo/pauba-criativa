@@ -11,6 +11,7 @@ export interface Configuration {
     instagram: string,
     behanceUrl: string,
     formUrl: string,
+    fiverrUrl: string,
     hashtags: [],
     mainPhrase: string,
     mainDescription: string,

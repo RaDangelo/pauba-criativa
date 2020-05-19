@@ -18,19 +18,24 @@
         </div>
     </div>
     <div class="container w-medium h-medium" style="left:6.5%">
-
-        <div class="project-container">
-            <div class="project-full-image" (click)="openBehance(projects[0].url)"
-                [style.backgroundImage]="'url(' + projects[0].image + ')'">
+        <div class="move-btn right" (click)="rotateLeft(1)"></div>
+        <div class="move-btn left" (click)="rotateRight()"></div>
+        <div *ngIf="isHover" class="project-hover" (click)="openBehance(projects[0].url)"
+        (mouseleave)="switchHover()">
+            <div>ver projeto</div>
+        </div>
+        <div class="project-container" id="firstImage">
+            <div class="project-full-image" [style.backgroundImage]="'url(' + projects[0].image + ')'"
+                (mouseenter)="switchHover()" >
             </div>
         </div>
-        <div class="project-container" style="opacity: 0.5;">
-            <div class="project-full-image" (click)="openBehance(projects[1].url)"
+        <div class="project-container" id="secondImage" style="opacity: 0.5;">
+            <div class="project-full-image" (click)="rotateLeft(1)"
                 [style.backgroundImage]="'url(' + projects[1].image + ')'">
             </div>
         </div>
-        <div class="project-container" style="margin-right: 0px;">
-            <div class="project-half-image" (click)="openBehance(projects[2].url)"
+        <div class="project-container" id="thirdImage" style="margin-right: 0px;">
+            <div class="project-half-image" (click)="rotateLeft(2)"
                 [style.backgroundImage]="'url(' + projects[2].image + ')'">
             </div>
         </div>

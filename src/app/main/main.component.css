@@ -101,13 +101,68 @@
     height: fit-content;
     cursor: pointer;
     margin: 4px;
+    z-index: 1;
+}
+
+.move-left {
+    -webkit-animation:forwards;
+    -webkit-animation-name: run-left;
+    -webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes run-left {
+    0% { left: 0;}
+    50%{ left : -50%;}
+    100%{ left: 0;}
+}
+
+.move-right {
+    -webkit-animation:forwards;
+    -webkit-animation-name: run-right;
+    -webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes run-right {
+    0% { left: 0;}
+    50%{ left : 50%;}
+    100%{ left: 0;}
 }
 
 .project-full-image {
+    position: relative;
     height: 290px;
     width: 370px;
     border-radius: 5px;
+    z-index: -1;
     background-size: 370px 290px;
+}
+
+.project-hover {
+    position: absolute;
+    height: 290px;
+    width: 370px;
+    border-radius: 5px;
+    z-index: 290;
+    opacity: 0.9;
+    margin: 4px;
+    cursor: pointer;
+    align-items: center;
+    display: inline-flex;
+    background-color: black;
+    background-size: 370px 290px;
+}
+
+.project-hover > div {
+    width: 40%;
+    height: 10%;
+    left: 28%;
+    position: relative;
+    color: #A7A7A7;
+    border: 2px #A7A7A7 solid;
+    font-size: 14px;
+    border-radius: 22px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .project-half-image {
@@ -115,7 +170,36 @@
     width: 170px;
     border-radius: 5px 0px 0px 5px;
     opacity: 0.2;
+    z-index: 1;
     background-size: 370px 290px;
+}
+
+.move-btn {
+    position: absolute;
+    left: -1.5%;
+    overflow: hidden;
+    z-index: 300;
+    height: 40px;
+    width: 40px;
+    display: inline-grid;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.move-btn:hover {
+    opacity: 1;
+}
+
+.move-btn.right {
+    top: 36%;
+    background: url('../../assets/seta-dir.svg');
+}
+
+.move-btn.left {
+    top: 52%;
+    background: url('../../assets/seta-esq.svg');
 }
 
 .h-small {

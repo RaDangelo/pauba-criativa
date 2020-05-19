@@ -11,32 +11,54 @@ export class MainComponent implements OnInit {
   configuration = config as Configuration;
   hashtags = config.hashtags;
   projects = config.projects;
-  projectOne;
-  projectTwo;
-  projectThree;
+  rightLabel = '>';
+  leftLabel = '<';
+  isHover = false;
 
-  constructor() { 
-    this.projectOne = this.projects[0];
-    this.projectTwo = this.projects[1];
-    this.projectThree = this.projects[2];
+  constructor() {
   }
 
   ngOnInit(): void {
   }
 
   openBehance(url?: string) {
+    this.switchHover();
     console.log('opening behance...');
     window.open(url ? url : this.configuration.behanceUrl);
   }
 
   rotateRight() {
-    let aux = [this.projects[3], this.projects[0], this.projects[1], this.projects[2]];
-    this.projects = aux;
+    this.projects.unshift(this.projects.pop());
+    // document.getElementById('firstImage').classList.add('move-right');
+    // document.getElementById('secondImage').classList.add('move-right');
+    // document.getElementById('thirdImage').classList.add('move-right');
+
+    // setTimeout(() => {
+    //   this.projects.unshift(this.projects.pop());
+    //   document.getElementById('firstImage').classList.remove('move-right');
+    //   document.getElementById('secondImage').classList.remove('move-right');
+    //   document.getElementById('thirdImage').classList.remove('move-right');
+    // }, 300)
   }
 
-  rotateLeft() {
-    let aux = [this.projects[1], this.projects[2], this.projects[3], this.projects[0]];
-    this.projects = aux;
+  rotateLeft(qty?: number) {
+    this.projects.push(this.projects.shift());
+
+    if (qty > 1) {
+      this.projects.push(this.projects.shift());
+    }
+    // document.getElementById('secondImage').classList.add('move-left');
+    // document.getElementById('thirdImage').classList.add('move-left');
+
+    // setTimeout(() => {
+    //   this.projects.push(this.projects.shift());
+    //   document.getElementById('secondImage').classList.remove('move-left');
+    //   document.getElementById('thirdImage').classList.remove('move-left');
+    // }, 300)
+  }
+
+  switchHover() {
+    this.isHover = !this.isHover;
   }
 
 }

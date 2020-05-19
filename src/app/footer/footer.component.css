@@ -20,8 +20,46 @@
     opacity: 1;
 }
 
-#monetize {
+#monetize-footer {
     width: 100%;
     height: 10%;
     background-color:#1ddb70;
+}
+
+#monetize-container{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+    left: 44%;
+    color: white;
+    text-align: center;
+    display: inline-flex;
+    cursor: pointer;
+    background-color: #1ddb70;
+}
+
+#monetize-container:hover {
+    height: 130%;
+}
+
+#fiverrDescription {
+    font-size: 16px;
+    left: 10%;
+    top: 34%;
+    float: left;
+    position: relative;
+    letter-spacing: 1.6px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+#fiverrIcon {
+    height: 16px;
+    float: left;
+    left: 6%;
+    top: 36%;
+    position: relative;
+    width: 16px;
+    background: url('../../assets/fiverr.svg');
 }

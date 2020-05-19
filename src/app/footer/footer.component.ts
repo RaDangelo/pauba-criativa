@@ -16,4 +16,8 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openFiverr() {
+    window.open(this.configuration.fiverrUrl);
+  }
+
 }
