@@ -18,20 +18,41 @@
         </div>
     </div>
     <div class="container w-medium h-medium" style="left:6.5%">
-        <div class="project-container">
-            <div class="project-full-image" (click)="openBehance(projects[0].url)"
+        <!-- <div class="project-container" id="leftProject">
+            <div class="project-image"
                 [style.backgroundImage]="'url(' + projects[0].image + ')'">
             </div>
         </div>
-        <div class="project-container" style="opacity: 0.5;">
-            <div class="project-full-image" (click)="openBehance(projects[1].url)"
+        <div class="project-container" id="centralProject">
+            <div class="project-image" (click)="openBehance(projects[1].url)"
                 [style.backgroundImage]="'url(' + projects[1].image + ')'">
             </div>
         </div>
-        <div class="project-container" style="margin-right: 0px;">
-            <div class="project-half-image" (click)="openBehance(projects[2].url)"
+        <div class="project-container" id="rightProject">
+            <div class="project-image" 
+                [style.backgroundImage]="'url(' + projects[2].image + ')'">
+            </div>
+        </div> -->
+        <div class="project-container" id="leftProject">
+            <div class="project-image" (click)="rotateRight()"
+                [style.backgroundImage]="'url(' + projects[0].image + ')'">
+            </div>
+        </div>
+        <div class="project-container" id="centralProject">
+            <div class="project-image" (click)="openBehance(projects[1].url)"
+                [style.backgroundImage]="'url(' + projects[1].image + ')'">
+            </div>
+        </div>
+        <div class="project-container" id="rightProject">
+            <div class="project-image"  (click)="rotateLeft()"
                 [style.backgroundImage]="'url(' + projects[2].image + ')'">
             </div>
         </div>
+        <div class="project-container" id="backProject">
+            <div class="project-image" 
+                [style.backgroundImage]="'url(' + projects[3].image + ')'">
+            </div>
+        </div>
+
     </div>
 </div>

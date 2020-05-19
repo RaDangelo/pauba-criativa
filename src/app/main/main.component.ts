@@ -29,7 +29,14 @@ export class MainComponent implements OnInit {
     window.open(url ? url : this.configuration.behanceUrl);
   }
 
-  moveRight() {
+  rotateRight() {
+    let aux = [this.projects[3], this.projects[0], this.projects[1], this.projects[2]];
+    this.projects = aux;
+  }
+
+  rotateLeft() {
+    let aux = [this.projects[1], this.projects[2], this.projects[3], this.projects[0]];
+    this.projects = aux;
   }
 
 }
