@@ -1,0 +1,73 @@
+{
+    "configuration": {
+        "title": "pauba-criativa",
+        "name": "PAÚBA",
+        "surname": "CRIATIVA",
+        "creationYear": "2020",
+        "siteDescription": "Estúdio de Criação",
+        "link1": "SOLICITE UM ORÇAMENTO",
+        "link2": "CONTATO",
+        "email": "paubacriativa@gmail.com",
+        "phoneNumber": "11 96430-3266",
+        "instagram": "https://www.instagram.com/paubacriativa/",
+        "behanceUrl": "https://www.behance.net/gustavobergamini",
+        "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfSCA_UNn8EsYhVPpFl1jDuA2mQbJfo8chs9Gc4LlDZWgsEBA/viewform",
+        "fiverrUrl": "https://www.fiverr.com/paubacriativa",
+        "hashtags": [
+            "design",
+            "marca"
+        ],
+        "mainPhrase": "Confira nossos últimos projetos.",
+        "mainDescription": "Será um prazer criar com você.",
+        "projects": [
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/404/d4a59d97359271.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/97359271/Live-Booz-E-commerce-Nuvemshop"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/509fac97124267.Y3JvcCwxMzgwLDEwNzksMCww.png",
+                "url": "https://www.behance.net/gallery/97124267/Web-Banners-04"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/a5f38597057815.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/97057815/Ricari-E-commerce-Tray"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c31f7496295649.Y3JvcCwxMzgwLDEwNzksMCww.png",
+                "url": "https://www.behance.net/gallery/96295649/Web-Banners-03"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/b3d69796865841.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/96865841/Magazine-Fitness-E-commerce-Tray"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/404/85fdee96609475.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/96609475/Damie-E-commerce-Tray"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/404/13434296178787.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/96178787/Papel-Estilo-E-commerce-NuvemShop"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/404/1420a296115635.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/96115635/A-Poderosa-E-commerce-MercadoShops"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/404/dab92296068679.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/96068679/DTF-Brinquedos-E-commerce-Tray"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/404/843e8e95955703.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/95955703/ProAction-Sports-Wordpress"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/404/d8e87293901999.Y3JvcCwxMzgwLDEwODAsMCww.png",
+                "url": "https://www.behance.net/gallery/93901999/Gel-Niche-E-commerce-Fbits"
+            },
+            {
+                "image": "https://mir-s3-cdn-cf.behance.net/projects/404/f3dbab94808845.Y3JvcCwxMzgwLDEwNzksMCww.png",
+                "url": "https://www.behance.net/gallery/94808845/Web-Banners-02"
+            }
+        ]
+    }
+}

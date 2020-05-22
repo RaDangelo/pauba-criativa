@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Configuration } from '../models/config.interface';
 import config from '../../assets/config.json';
 
@@ -8,9 +8,20 @@ import config from '../../assets/config.json';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  links = ['', ''];
+  _data: any;
 
-  configuration = config as Configuration;
-  links = [this.configuration.link1, this.configuration.link2];
+  @Input() set data(value: any) {
+    if (value) {
+      this._data = value;
+      this.links = [value.link1, value.link2];
+    }
+  };
+
+  get data() {
+    return this._data;
+  }
+
   isContact = false;
 
   constructor() { }
@@ -28,22 +39,22 @@ export class MenuComponent implements OnInit {
 
   sendMail() {
     console.log('sending email...');
-    window.location.href = `mailto:${this.configuration.email}`;
+    window.location.href = `mailto:${this.data.email}`;
   }
 
   buy() {
     console.log('opening form...');
-    window.open(this.configuration.formUrl);
+    window.open(this.data.formUrl);
   }
 
   openInstagram() {
     console.log('redirecting instagram...');
-    window.open(this.configuration.instagram);
+    window.open(this.data.instagram);
   }
 
   openBehance() {
     console.log('opening behance...');
-    window.open(this.configuration.behanceUrl);
+    window.open(this.data.behanceUrl);
   }
 
 }

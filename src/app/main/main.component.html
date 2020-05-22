@@ -1,12 +1,12 @@
 <div id="main">
     <div class="container w-full h-small" style="align-items: start;">
-        <div id="description">{{configuration.siteDescription}}
-            <div *ngFor="let h of hashtags" class="hashtag">#{{h}} </div>
+        <div id="description">{{data?.siteDescription}}
+            <div *ngFor="let h of data.hashtags" class="hashtag">#{{h}} </div>
         </div>
     </div>
     <div class="container w-small h-medium">
-        <div id="mainPhrase">{{configuration.mainPhrase}}</div>
-        <div id="mainDescription">{{configuration.mainDescription}}</div>
+        <div id="mainPhrase">{{data?.mainPhrase}}</div>
+        <div id="mainDescription">{{data?.mainDescription}}</div>
         <div class="container w-h-small">
             <div id="behanceDescription">veja mais em nosso</div>
             <div id="behanceButton" class="blue-btn" (click)="openBehance()">

@@ -1,23 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { Configuration } from '../models/config.interface';
-import config from '../../assets/config.json';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
-  configuration = config as Configuration;
-  footer = `${this.configuration.name} ${this.configuration.surname} © ${this.configuration.creationYear}`;
+export class FooterComponent {
 
-  constructor() { }
+  footer = '';
+  fiverrUrl = '';
 
-  ngOnInit(): void {
+  @Input() set data(value: any) {
+    if (value) {
+      this.footer = `${value.name} ${value.surname} © ${value.creationYear}`;
+      this.fiverrUrl = value.fiverrUrl;
+    }
+  };
+
+  constructor() {
   }
 
   openFiverr() {
-    window.open(this.configuration.fiverrUrl);
+    window.open(this.fiverrUrl);
   }
 
 }

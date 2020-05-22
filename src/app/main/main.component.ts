@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Configuration } from '../models/config.interface';
 import config from '../../assets/config.json';
 
@@ -8,12 +8,20 @@ import config from '../../assets/config.json';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  configuration = config as Configuration;
-  hashtags = config.hashtags;
-  projects = config.projects;
-  rightLabel = '>';
-  leftLabel = '<';
+  projects = this.setDefaultProjects();
+  _data = {};
   isHover = false;
+
+  @Input() set data(value: any) {
+    if (value) {
+      this._data = value;
+      this.projects = value.projects;
+    }
+  };
+
+  get data() {
+    return this._data;
+  }
 
   constructor() {
   }
@@ -21,10 +29,14 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  private setDefaultProjects() {
+    return [{ image: '', url: '' }, { image: '', url: '' }, { image: '', url: '' }]
+  }
+
   openBehance(url?: string) {
     this.switchHover();
     console.log('opening behance...');
-    window.open(url ? url : this.configuration.behanceUrl);
+    window.open(url ? url : this.data.behanceUrl);
   }
 
   rotateRight() {
