@@ -10,6 +10,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { DatabaseService } from './services/database.service';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DatabaseService } from './services/database.service';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FlexLayoutModule
   ],
   providers: [DatabaseService],
   bootstrap: [AppComponent]

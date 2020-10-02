@@ -34,7 +34,7 @@
                 [style.backgroundImage]="'url(' + projects[1].image + ')'">
             </div>
         </div>
-        <div class="project-container" id="thirdImage" style="margin-right: 0px;">
+        <div fxHide [fxHide.lg]="false" class="project-container" id="thirdImage" style="margin-right: 0px;">
             <div class="project-half-image" (click)="rotateLeft(2)"
                 [style.backgroundImage]="'url(' + projects[2].image + ')'">
             </div>
